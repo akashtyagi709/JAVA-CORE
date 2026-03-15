@@ -1,6 +1,13 @@
-public class Array{
-    public static void main(String[] args){
+@FunctionalInterface
+interface A
+{
+    void show(int i);
+}
 
+public class Array {
+    public static void main(String[] args){
+    A obj= i -> System.out.println("In Show "+i);
+    obj.show(66);
 
 
 //        int nums[][]=new int[3][4];
